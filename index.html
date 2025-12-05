@@ -9,10 +9,10 @@
     :root {
       --bg: #ffffff;
       --ink: #1a1a1a;
-      --accent: #2b7bff; 
+      --accent: #2b7bff;
       --accent-dark: #1d56b3;
-      --panel: #f3f6ff;
-      --border: #dbe2f3;
+      --panel: #f5f8ff;
+      --border: #d6def2;
     }
 
     body {
@@ -27,21 +27,22 @@
       top: 0;
       background: var(--bg);
       border-bottom: 1px solid var(--border);
-      padding: 12px 24px;
+      padding: 14px 26px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      z-index: 10;
+      z-index: 20;
     }
 
     header h1 {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin: 0;
-      font-weight: 600;
+      font-weight: 700;
+      color: var(--accent-dark);
     }
 
     nav a {
-      margin-left: 20px;
+      margin-left: 22px;
       text-decoration: none;
       color: var(--ink);
       font-weight: 500;
@@ -53,36 +54,34 @@
 
     /* HERO */
     .hero {
-      padding: 80px 20px;
+      padding: 90px 20px;
       text-align: center;
       background: var(--panel);
       border-bottom: 1px solid var(--border);
     }
 
     .hero h2 {
-      font-size: 2.2rem;
-      margin: 0 0 10px;
-      font-weight: 700;
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      font-weight: 800;
+      color: var(--accent-dark);
     }
 
     .hero p {
-      max-width: 600px;
-      margin: 0 auto 20px;
+      max-width: 650px;
+      margin: 0 auto 25px;
       line-height: 1.6;
-    }
-
-    .btns {
-      margin-top: 20px;
+      font-size: 1.1rem;
     }
 
     .btn {
       display: inline-block;
-      padding: 12px 24px;
-      border-radius: 8px;
+      padding: 13px 26px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: 600;
       background: var(--accent);
-      color: white;
+      color: #fff;
       margin: 5px;
     }
 
@@ -98,35 +97,36 @@
     }
 
     section h3 {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       margin-bottom: 15px;
       text-align: center;
+      color: var(--accent-dark);
     }
 
     section p {
       line-height: 1.6;
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
-    .beneficios-grid {
+    .grid {
       display: grid;
       gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       margin-top: 30px;
     }
 
     .card {
-      padding: 20px;
+      padding: 22px;
       background: var(--panel);
       border: 1px solid var(--border);
       border-radius: 12px;
-      text-align: left;
     }
 
     .card h4 {
       margin-top: 0;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      color: var(--accent-dark);
     }
 
     /* ASISTENTE */
@@ -138,18 +138,15 @@
       text-align: center;
     }
 
-    .asistente-box p {
-      margin-bottom: 15px;
-    }
-
     .asistente-btn {
-      padding: 12px 20px;
+      padding: 12px 22px;
       background: var(--accent);
-      color: #fff;
-      border-radius: 8px;
+      color: white;
+      border-radius: 10px;
       cursor: pointer;
-      display: inline-block;
       font-weight: 600;
+      display: inline-block;
+      margin-top: 10px;
     }
 
     .asistente-btn:hover {
@@ -167,7 +164,7 @@
 
   <script>
     function abrirAsistente() {
-      alert("Aquí irá el asistente inteligente conectado al proyecto. (Demo visual)");
+      alert("Aquí se desplegará el asistente inteligente conectado al proyecto LinguaLab. (Demo visual)");
     }
   </script>
 </head>
@@ -177,57 +174,107 @@
   <header>
     <h1>LinguaLab</h1>
     <nav>
-      <a href="#sobre">Proyecto</a>
+      <a href="#que-es">¿Qué es?</a>
+      <a href="#objetivos">Objetivos</a>
+      <a href="#actividades">Actividades</a>
       <a href="#beneficios">Beneficios</a>
       <a href="#registro">Registro</a>
       <a href="#asistente">Asistente</a>
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO / IDENTIDAD -->
   <section class="hero">
-    <h2>Plataforma Multilingüe para Estudiantes Internacionales</h2>
+    <h2>LinguaLab</h2>
     <p>
-      LinguaLab es un espacio digital diseñado por la Universidad Global Europea para apoyar la práctica de idiomas mediante actividades guiadas, tutorías y retos semanales.
+      Plataforma multilingüe creada por la Universidad Global Europea para apoyar a estudiantes internacionales mediante actividades guiadas, tutorías, retos semanales y un asistente inteligente 24/7.
     </p>
 
-    <div class="btns">
-      <a href="#registro" class="btn">Registrarse</a>
-      <a href="#asistente" class="btn">Asistente Inteligente</a>
+    <a href="#registro" class="btn">Registrarse</a>
+    <a href="#asistente" class="btn">Asistente Inteligente</a>
+  </section>
+
+  <!-- ¿QUÉ ES LINGUALAB? -->
+  <section id="que-es">
+    <h3>¿Qué es LinguaLab?</h3>
+    <p>
+      LinguaLab es un espacio digital diseñado para fortalecer el aprendizaje de idiomas a través de prácticas guiadas, actividades formativas y herramientas interactivas. 
+      Busca apoyar la integración lingüística, académica y cultural de estudiantes internacionales.
+    </p>
+  </section>
+
+  <!-- OBJETIVOS -->
+  <section id="objetivos">
+    <h3>Objetivos del Programa</h3>
+
+    <div class="grid">
+      <div class="card">
+        <h4>🎯 Mejorar competencias lingüísticas</h4>
+        <p>Desarrollo de habilidades comunicativas en diferentes idiomas mediante actividades estructuradas.</p>
+      </div>
+
+      <div class="card">
+        <h4>🌍 Favorecer la integración internacional</h4>
+        <p>Apoyo a la adaptación académica y cultural de estudiantes provenientes de diversos contextos.</p>
+      </div>
+
+      <div class="card">
+        <h4>📈 Impulsar la autonomía del aprendizaje</h4>
+        <p>Promover el autoestudio y el progreso personal con seguimiento flexible.</p>
+      </div>
     </div>
   </section>
 
-  <!-- SOBRE EL PROYECTO -->
-  <section id="sobre">
-    <h3>¿Qué es LinguaLab?</h3>
-    <p>
-      Es una plataforma creada para que los estudiantes internacionales desarrollen habilidades lingüísticas por medio de retos, actividades y apoyo académico. También centraliza la información del proyecto, permite el registro y ofrecerá un asistente inteligente integrado.
-    </p>
+  <!-- ACTIVIDADES -->
+  <section id="actividades">
+    <h3>Actividades que Ofrece LinguaLab</h3>
+
+    <div class="grid">
+      <div class="card">
+        <h4>📚 Actividades guiadas</h4>
+        <p>Retos semanales diseñados para mejorar lectura, escucha y expresión.</p>
+      </div>
+
+      <div class="card">
+        <h4>🎧 Tutorías especializadas</h4>
+        <p>Sesiones individuales y grupales con enfoque multicultural.</p>
+      </div>
+
+      <div class="card">
+        <h4>📝 Mini-proyectos lingüísticos</h4>
+        <p>Trabajos cortos que integran habilidades comunicativas.</p>
+      </div>
+
+      <div class="card">
+        <h4>🤝 Intercambios y práctica colaborativa</h4>
+        <p>Espacios virtuales para interacción entre estudiantes internacionales.</p>
+      </div>
+    </div>
   </section>
 
   <!-- BENEFICIOS -->
   <section id="beneficios">
-    <h3>Beneficios</h3>
+    <h3>Beneficios para Estudiantes Internacionales</h3>
 
-    <div class="beneficios-grid">
+    <div class="grid">
       <div class="card">
-        <h4>📚 Actividades guiadas</h4>
-        <p>Prácticas semanales diseñadas para mejorar comprensión y producción.</p>
+        <h4>🌐 Entorno multicultural</h4>
+        <p>Experiencia académica enriquecida con diversidad lingüística.</p>
       </div>
 
       <div class="card">
-        <h4>🎧 Tutorías</h4>
-        <p>Apoyo académico especializado con enfoque multicultural.</p>
-      </div>
-
-      <div class="card">
-        <h4>🌐 Entorno internacional</h4>
-        <p>Interacción con estudiantes de distintas regiones y lenguas.</p>
+        <h4>⏱ Acceso flexible</h4>
+        <p>Actividades disponibles 24/7 desde cualquier dispositivo.</p>
       </div>
 
       <div class="card">
         <h4>🤖 Asistente inteligente</h4>
-        <p>Respuestas inmediatas relacionadas con el proyecto, 24/7.</p>
+        <p>Respuestas automáticas sobre dudas del proyecto, en cualquier momento.</p>
+      </div>
+
+      <div class="card">
+        <h4>📈 Progreso medible</h4>
+        <p>Seguimiento continuo que permite evaluar el avance del aprendizaje.</p>
       </div>
     </div>
   </section>
@@ -235,23 +282,25 @@
   <!-- REGISTRO -->
   <section id="registro">
     <h3>Registro de Participación</h3>
-    <p>Completa el formulario oficial para unirte al programa.</p>
+    <p>Completa el formulario oficial para unirte al programa LinguaLab.</p>
 
     <iframe 
       src="https://forms.gle/DRKpg9Rx2y81jE2y8"
       width="100%" 
-      height="800" 
+      height="820" 
       frameborder="0"
       style="border-radius:12px; background:white;">
     </iframe>
   </section>
 
-  <!-- ASISTENTE -->
+  <!-- ASISTENTE INTELIGENTE -->
   <section id="asistente">
     <h3>Asistente Inteligente</h3>
+
     <div class="asistente-box">
       <p>
-        Este asistente responderá preguntas sobre LinguaLab, requisitos, actividades, funcionamiento y más. 
+        Este asistente responderá preguntas sobre LinguaLab, su funcionamiento,
+        actividades, requisitos y más.  
       </p>
       <div class="asistente-btn" onclick="abrirAsistente()">
         Abrir Asistente
